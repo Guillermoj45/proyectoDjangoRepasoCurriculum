@@ -1,15 +1,18 @@
+
 {% extends 'base.html' %}
 
-{% block title %}estudios{% endblock %}
-{% block hobbies %} text-secondary {% endblock %}
+{% block title %}Hobbies{% endblock %}
+
+{% block hobbies %} active {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Estudios</h1>
-                <p>En esta sección se mostrarán los estudios realizados por el usuario.</p>
-            </div>
-        </div>
-    </div>
+<div class="container py-5">
+    <h1 class="text-center mb-4">Hobbies</h1>
+    <ul class="list-group">
+        <li class="list-group-item">Pilotar drones</li>
+        <li class="list-group-item">Montaje de ordenadores para gaming</li>
+        <li class="list-group-item">Interés por las Inteligencias Artificiales</li>
+        <li class="list-group-item">Mi GitHub: <a href="https://github.com/Guillermoj45" target="_blank">https://github.com/Guillermoj45</a></li>
+    </ul>
+</div>
 {% endblock %}

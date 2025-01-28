@@ -1,15 +1,18 @@
 {% extends 'base.html' %}
 
-{% block title %}estudios{% endblock %}
-{% block habilidades %} text-secondary {% endblock %}
+{% block title %}Habilidades{% endblock %}
+
+{% block habilidades %} active {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Estudios</h1>
-                <p>En esta sección se mostrarán los estudios realizados por el usuario.</p>
-            </div>
-        </div>
-    </div>
+<div class="container py-5">
+    <h1 class="text-center mb-4">Habilidades</h1>
+    <ul class="list-group">
+        <li class="list-group-item">Conocimientos avanzados en HTML, CSS, JavaScript</li>
+        <li class="list-group-item">Altos conocimientos en creación y administración de máquinas virtuales</li>
+        <li class="list-group-item">Competencias en gestión de protocolos de seguridad</li>
+        <li class="list-group-item">Conocimientos en bases de datos (MariaDB, MySQL, PostgreSQL, MongoDB)</li>
+        <li class="list-group-item">Usuario avanzado de suites ofimáticas (Microsoft Office, LibreOffice, Google Suite)</li>
+    </ul>
+</div>
 {% endblock %}

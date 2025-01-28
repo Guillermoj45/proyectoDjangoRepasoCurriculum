@@ -1,15 +1,35 @@
 {% extends 'base.html' %}
 
-{% block title %}estudios{% endblock %}
-{% block experiencia %} text-secondary {% endblock %}
+{% block title %}Experiencia{% endblock %}
+
+{% block experiencia %} active {% endblock %}
 
 {% block content %}
-    <div class="container">
+<div class="container py-5">
+    <h1 class="text-center mb-4">Experiencia Profesional</h1>
+    <div class="card shadow-lg border-0">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Prácticas en CompuSpain</h5>
+            <p class="card-text">Duración: 2021-2023</p>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h5 class="text-center">Tareas Realizadas</h5>
         <div class="row">
-            <div class="col-12">
-                <h1>Estudios</h1>
-                <p>En esta sección se mostrarán los estudios realizados por el usuario.</p>
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Administración de sistemas operativos (Linux y Windows)</li>
+                    <li class="list-group-item">Configuración y creación de redes en simulación (Packet Tracer)</li>
+                    <li class="list-group-item">Gestión de servidores DHCP, DNS, Web y Dominio</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Creación y administración de contenedores Docker</li>
+                    <li class="list-group-item">Desarrollo de código en Java, Python, TypeScript y Kotlin</li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
