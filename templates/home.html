@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 
-{% block title %}home{% endblock %}
+{% block title %}Home{% endblock %}
+
 {% block home %} text-secondary {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Home</h1>
-                <p>En esta sección se mostrará la información principal del usuario.</p>
-            </div>
+<div class="container py-5">
+    <h1 class="text-center mb-4">Bienvenido a mi Curriculum</h1>
+    <div class="card shadow-lg border-0">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Sobre mí</h5>
+            <p class="card-text">Soy Guillermo Remesal, un joven entusiasta de la electrónica y la tecnología. Me apasiona el aprendizaje continuo y la exploración de nuevas tecnologías en el campo de la informática y la programación.</p>
+            <ul class="list-group list-group-flush mt-4">
+                <li class="list-group-item">🌟 Formación en sistemas microinformáticos y redes.</li>
+                <li class="list-group-item">🚀 Experiencia en desarrollo de software y administración de sistemas.</li>
+                <li class="list-group-item">🎯 Intereses: Inteligencia artificial, pilotaje de drones y gaming.</li>
+            </ul>
         </div>
     </div>
+</div>
 {% endblock %}

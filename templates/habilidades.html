@@ -2,17 +2,22 @@
 
 {% block title %}Habilidades{% endblock %}
 
-{% block habilidades %} active {% endblock %}
+{% block habilidades %} text-secondary {% endblock %}
 
 {% block content %}
 <div class="container py-5">
     <h1 class="text-center mb-4">Habilidades</h1>
-    <ul class="list-group">
-        <li class="list-group-item">Conocimientos avanzados en HTML, CSS, JavaScript</li>
-        <li class="list-group-item">Altos conocimientos en creación y administración de máquinas virtuales</li>
-        <li class="list-group-item">Competencias en gestión de protocolos de seguridad</li>
-        <li class="list-group-item">Conocimientos en bases de datos (MariaDB, MySQL, PostgreSQL, MongoDB)</li>
-        <li class="list-group-item">Usuario avanzado de suites ofimáticas (Microsoft Office, LibreOffice, Google Suite)</li>
-    </ul>
+    <div class="card shadow-lg border-0">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Competencias Técnicas</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Conocimientos avanzados en HTML, CSS, JavaScript</li>
+                <li class="list-group-item">Altos conocimientos en creación y administración de máquinas virtuales</li>
+                <li class="list-group-item">Competencias en gestión de protocolos de seguridad</li>
+                <li class="list-group-item">Conocimientos en bases de datos (MariaDB, MySQL, PostgreSQL, MongoDB)</li>
+                <li class="list-group-item">Usuario avanzado de suites ofimáticas (Microsoft Office, LibreOffice, Google Suite)</li>
+            </ul>
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -1,18 +1,22 @@
-
 {% extends 'base.html' %}
 
 {% block title %}Hobbies{% endblock %}
 
-{% block hobbies %} active {% endblock %}
+{% block hobbies %} text-secondary {% endblock %}
 
 {% block content %}
 <div class="container py-5">
     <h1 class="text-center mb-4">Hobbies</h1>
-    <ul class="list-group">
-        <li class="list-group-item">Pilotar drones</li>
-        <li class="list-group-item">Montaje de ordenadores para gaming</li>
-        <li class="list-group-item">Interés por las Inteligencias Artificiales</li>
-        <li class="list-group-item">Mi GitHub: <a href="https://github.com/Guillermoj45" target="_blank">https://github.com/Guillermoj45</a></li>
-    </ul>
+    <div class="card shadow-lg border-0">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Aficiones</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Pilotar drones</li>
+                <li class="list-group-item">Montaje de ordenadores para gaming</li>
+                <li class="list-group-item">Interés por las Inteligencias Artificiales</li>
+                <li class="list-group-item">Mi GitHub: <a href="https://github.com/Guillermoj45" target="_blank">https://github.com/Guillermoj45</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 {% endblock %}
